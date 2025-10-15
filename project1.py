@@ -1,4 +1,4 @@
-# SI 201 Project 1
+# SI 201 Fall-25 git Project 1
 # Your name: Jessica Moon
 # Your student id: 44434120
 # Your email: djmoon@umich.edu
