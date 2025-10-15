@@ -1,4 +1,4 @@
-# SI 201 HW4
+# SI 201 Project 1
 # Your name: Jessica Moon
 # Your student id: 44434120
 # Your email: djmoon@umich.edu
@@ -198,14 +198,13 @@ class PenguinTest(unittest.TestCase):
      
 if __name__ == '__main__':
     
-     data = read_penguin_data("penguins.csv")
+    data = read_penguin_data("penguins.csv") 
+    species_yearly_avg = calc_yearly_avg_flipper_length(data)
+    overall_yearly_avg = calc_overall_yearly_average(species_yearly_avg)
+    above_avg_penguins = above_species_yearly_average(species_yearly_avg, overall_yearly_avg)
+    write_results(species_yearly_avg,overall_yearly_avg,above_avg_penguins)
 
-          
-     species_yearly_avg = calc_yearly_avg_flipper_length(data)
-
-
-
-     unittest.main(verbosity=2)
+    unittest.main(verbosity=2)
 
 
 
